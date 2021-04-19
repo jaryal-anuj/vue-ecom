@@ -23,6 +23,7 @@ export default {
 		
 	},
 	mounted(){
+    	console.log('auto login')
 		this.autoLogin();
 	}
 }
