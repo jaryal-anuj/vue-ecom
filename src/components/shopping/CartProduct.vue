@@ -10,7 +10,7 @@
 				<span class="font-semibold" @click.prevent="addToCart">+</span> 
 			</div>
 			<div class="pr-8 "> 
-				<span class="text-xs font-medium">${{ item.product.price }}</span> 
+				<span class="text-xs font-medium">${{ (item.product.price*item.quantity).toFixed(2) }}</span> 
 			</div>
 			<a href="#" @click.prevent="removeProductFromCart(item.product.id)"> <i class="fa fa-close text-xs font-large"></i> </a>
 		</div>
